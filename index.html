@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sajt | Jovan Grković</title>
+    <script defer src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+      emailjs.init("user_Us02nVZptd65KOjtGZyMV");
+    })();
+</script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h1>Apartmani Grković</h1>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Stanovi</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Rezervacije</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">O Vrnjačkoj Banji</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          Posetite <br />
+          <span class="highlight">najbolje <br /></span>
+          apartmane u<br />
+          <span class="highlight">Vrnjačkoj Banji</span>
+        </h1>
+        <button class="btn--text btn--scroll-to">Više &DownArrow;</button>
+        <img
+          src="img/apartman2.jpg"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Stanovi</h2>
+        <h3 class="section__header">
+          Stanovi i apartmani na odličnoj lokaciji.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img src="img/hero.jpg" alt="Computer" class="features__img" />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Novi stanovi</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias
+            sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam
+            debitis ducimus.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Odmor u najlepšoj Banji</h5>
+          <p>
+            Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+            inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+            quibusdam!
+          </p>
+        </div>
+        <img src="img/apartman1.jpg" alt="Plant" class="features__img" />
+
+        <img src="img/apartman2.jpg" alt="Credit card" class="features__img" />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">
+            Kupovina stanova preko stambenih kredita
+          </h5>
+          <p>
+            Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+            eveniet consequatur odit quam quos possimus assumenda dicta fuga
+            inventore ab.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Rezervacije</h2>
+        <h3 class="section__header">Rezervišite vaš apartman na vreme.</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01 </span>Stan
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02 </span>Garsonjera
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03 </span>Krevet
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Rezervišite vaš stan sa odvojenom kuhinjom i spavaćom sobom !
+          </h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+            <button class=" btn btn--show-modal btn-rezervisi" value="stan" href="#">
+              Iznajmi
+            </button>
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Garsonjera sa dnevnom i spavacom sobom!
+          </h5>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+            <button
+              class="btn btn--show-modal btn-rezervisi"
+              value="garsonjeru"
+              href="#"
+            >
+              Iznajmi
+            </button>
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Iznajmite jednokrevetnu sobu sa kupatilom
+          </h5>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+            <button
+              class="btn btn--show-modal btn-rezervisi"
+              value="krevet"
+              href="#"
+            >
+              Iznajmi
+            </button>
+          </p>
+        </div>
+        <h2 class="section__description rezervacije">Rezervacije: <br /></h2>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">O Vrnjačkoj Banji</h2>
+        <h3 class="section__header">Posetite najlepšu Banju u Srbiji.</h3>
+        <h4>
+          Kraljica banjskog turizma, kako neformalno nazivaju Vrnjačku Banju, od
+          davnina je bila poznata po svojim lekovitim izvorima. Ovo područje je
+          bilo naseljeno još u praistoriji. Arheološki nalazi, oruđe iz mlađeg
+          kamenog doba, otkrivaju mogućnost da su i praistorijski ljudi
+          koristili banjske izvore. O lekovitosti vode u Vrnjačkoj Banji prvi
+          put se može čuti u doba Rimljana. Oni su na ovom mestu izgradili
+          lečilište Aquae Orcinae, i izvor tople vode Fons Romanus. Veruje se da
+          su prethodno i starosedeoci, keltsko pleme Skordisci, koristili vodu
+          sa izvora za piće, kupanje i lečenje. Koliko je banjska voda bila
+          čuvena u antičko doba, najviše govore brojni zlatnici koji su
+          pronađeni. Rimljani su bacali tadašnje novčiće u bunare. Osim zlatnika
+          iz 2. do 4. veka, u banji su takođe pronađeni i ostaci bazena za
+          kupanje. Veruje se da su i južni Sloveni znali za lekovitost
+          mineralnih voda kada su nastanili balkansko poluostrvo. Ipak, o
+          istoriji Vrnjačke Banje tog doba se malo zna.
+        </h4>
+      </div>
+
+      <div class="slider">
+        <div class="slide"><img src="img/img-1.jpg" alt="Slika 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Slika 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Slika 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Slika 4" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Registrujte se i rezervišite <br />
+        vaš apartman <br />
+        za samo 5 minuta
+      </h2>
+      <form class="modal__form">
+        <label>Ime</label>
+        <input class="inp-ime" type="text" id="ime"/>
+        <label>Prezime</label>
+        <input class="inp-prezime" type="text" id="prezime" />
+        <label>Email Adresa</label>
+        <input class="inp-mail" type="email" id="email"/>
+        <div class="dropdown">
+          <button class="dropbtn">Izaberi broj dana</button>
+          <div class="dropdown-content">
+            <p class="opcija" href="#">1</p>
+            <p class="opcija" href="#">2</p>
+            <p class="opcija" href="#">3</p>
+            <p class="opcija" href="#">4</p>
+            <p class="opcija" href="#">5</p>
+          </div>
+        </div>
+
+        <h3 class="odabrana-opc font">Broj dana:</h3>
+        <button class="btn btn-potvrdi" onclick="sendMail()">Potvrdi &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
